@@ -130,10 +130,3 @@ You can jump directly to a mailbox if you know its number.
 | Advantages    | Fast access, efficient, widely used                     |
 | Drawbacks     | Fixed size, costly mid-insert/delete, unsafe if misused |
 
----
-
-✅ With this knowledge, you’ll be ready to implement arrays in **C programs** and understand how they power more advanced data structures.
-
----
-
-Do you also want me to **add example C programs (1D + 2D arrays)** at the end of the README so you can showcase working code on GitHub?
