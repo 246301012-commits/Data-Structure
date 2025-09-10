@@ -46,19 +46,36 @@ void display() {
 }
 
 int main() {
-    enqueue(10);
-    enqueue(20);
-    enqueue(30);
-    display();
+    int choice, value;
 
-    dequeue();
-    display();
+    while (1) {
+        printf("\nQueue Operations:\n");
+        printf("1. Enqueue\n");
+        printf("2. Dequeue\n");
+        printf("3. Display\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
-    enqueue(40);
-    enqueue(50);
-    enqueue(60);  // Should show full message
-
-    display();
+        switch(choice) {
+            case 1:
+                printf("Enter value to enqueue: ");
+                scanf("%d", &value);
+                enqueue(value);
+                break;
+            case 2:
+                dequeue();
+                break;
+            case 3:
+                display();
+                break;
+            case 4:
+                printf("Exiting...\n");
+                return 0;
+            default:
+                printf("Invalid choice! Try again.\n");
+        }
+    }
 
     return 0;
 }
